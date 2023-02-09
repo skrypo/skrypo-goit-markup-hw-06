@@ -195,7 +195,7 @@ button {
   padding-bottom: 94px;
 }
 
-.hero-section {
+.hero {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -210,7 +210,7 @@ button {
   padding-bottom: 200px;
 }
 
-.cta-title {
+.hero__cta {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -226,7 +226,7 @@ button {
   text-align: center;
 }
 
-.cta-btn {
+.hero__btn {
   padding: 10px 19px 10px 20px;
   display: block;
   margin-left: auto;
@@ -245,23 +245,19 @@ button {
   transition-delay: 0s;
 }
 
-.cta-btn:hover,
-.cta-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--btn-active-color);
 }
 
-/* -------Feature Section------ */
+/* -------Features Section------ */
 
-.features-list {
+.features__list {
   display: flex;
   justify-content: space-between;
 }
 
-.features-title {
-  display: none;
-}
-
-.feature-icons-wrapper {
+.features__icons-wrapper {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -271,11 +267,11 @@ button {
   margin-bottom: 30px;
 }
 
-.feature-item {
+.features__item {
   width: 270px;
 }
 
-.feature-title {
+.features__title {
   font-family: "Roboto";
   margin-bottom: 9px;
   font-weight: 700;
@@ -285,7 +281,7 @@ button {
   color: var(--title-txt-color);
 }
 
-.feature-desc {
+.features__desc {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -297,13 +293,13 @@ button {
   padding-top: 0px;
 }
 
-.gallery-wrapper {
+.gallery__wrapper {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.gallery-title,
+.gallery__title,
 .team-title {
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -317,20 +313,20 @@ button {
   margin-bottom: 50px;
 }
 
-.gallery-list {
+.gallery__list {
   display: flex;
   justify-content: space-between;
 }
 
-.gallery-item {
+.gallery__item {
   position: relative;
 }
 
-.gallery-img {
+.gallery__img {
   display: block;
 }
 
-.gallery-desc {
+.gallery__desc {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -341,7 +337,7 @@ button {
   align-items: center;
 }
 
-.gallery-desc-text {
+.gallery__desc-text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
