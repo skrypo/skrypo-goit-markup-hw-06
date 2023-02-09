@@ -72,27 +72,27 @@ button {
   border-bottom: 1px solid var(--border-color-secondary);
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
 
   align-items: center;
 }
 
-.nav-menu {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.menu-header {
+.nav__list {
   display: flex;
 }
 
-.menu-link:first-child {
+.nav__item:first-child {
   margin-right: 50px;
 }
 
-.menu-link:nth-child(2) {
+.nav__item:nth-child(2) {
   margin-right: 50px;
 }
 
@@ -103,12 +103,11 @@ button {
   padding-bottom: 24px;
 }
 
-.logo-second-part {
+.logo__hdsecond {
   color: var(--additional-color-logo);
 }
 
-.header-logo,
-.footer-logo {
+.logo {
   font-family: "raleway";
   font-weight: 700;
   color: var(--btn-color);
@@ -116,7 +115,7 @@ button {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.menu-item {
+.nav__link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -132,13 +131,13 @@ button {
   position: relative;
 }
 
-.menu-item:hover,
+.nav__link:hover,
 .tel-footer:hover,
 .email-footer:hover {
   color: var(--btn-color);
 }
 
-.menu-item:focus,
+.nav__link:focus,
 .tel-footer:focus,
 .email-footer:focus {
   color: var(--btn-color);
@@ -159,7 +158,7 @@ button {
   justify-content: flex-end;
 }
 
-.address-item {
+.address__link {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--main-txt-color);
@@ -176,16 +175,16 @@ button {
   transition-delay: 0s;
 }
 
-.address-item:hover,
-.address-item:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--btn-color);
 }
 
-.address-icon {
+.addresses__icon {
   fill: currentColor;
 }
 
-.tel-item {
+.address__link--tel {
   margin-left: 30px;
 }
 
@@ -498,7 +497,7 @@ button {
   display: block;
 }
 
-.ft-logo-second {
+.logo__ftsecond {
   color: var(--bgrnd-color);
 }
 
@@ -579,6 +578,11 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.input-footer-contact:focus {
+  outline: 1px solid transparent;
+  border: 1px solid var(--btn-color);
+}
+
 .btn-footer-submit {
   padding: 10px 28px;
   min-width: 200px;
@@ -590,6 +594,10 @@ button {
   border: none;
   display: flex;
   gap: 10px;
+}
+
+.btn-footer-submit:hover {
+  background-color: var(--btn-active-color);
 }
 
 .btn-footer-name {
@@ -801,6 +809,11 @@ pointer-evenrs: none;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
+}
+
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
+  fill: var(--btn-color);
 }
 
 .backdrop.is-hidden .modal {
